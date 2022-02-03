@@ -21,7 +21,7 @@ weatherForm.addEventListener('submit', (event) => {
         return;
       }
       messageOne.textContent = data.location;
-      messageTwo.innerText = `In ${location} is ${data.forecast.weather_descriptions[0]}.\n 
+      messageTwo.innerText = `Forecast in ${location}: ${data.forecast.weather_descriptions[0]}.\n 
           Temperature: ${data.forecast.temperature}\n
           Humidity: ${data.forecast.humidity}
       `;

@@ -24,21 +24,21 @@ app.use(express.static(publicPath));
 app.get('/', (req, res) => {
   res.render('index', {
     title: 'Mavel App',
-    name: 'Luigi Schifano'
+    name: 'Roberto Zeppa'
   });
 });
 
 app.get('/about', (req, res) => {
   res.render('about', {
     title: 'About Mavel',
-    name: 'Federico Cappella'
+    name: 'Roberto Zeppa'
   });
 });
 
 app.get('/help', (req, res) => {
   res.render('help', {
     title: 'Help Mavel',
-    name: 'Marta Groia'
+    name: 'Roberto Zeppa'
   });
 });
 
@@ -77,7 +77,7 @@ app.get('/help/*', (req, res) => {
   res.render('404', {
     title: '404',
     errorMessage: 'Help articole not found',
-    name: 'Marta Groia'
+    name: 'Roberto Zeppa'
   });
 });
 
@@ -85,7 +85,7 @@ app.get('*', (req, res) => {
   res.render('404', {
     title: '404',
     errorMessage: 'Page not found',
-    name: 'Marta Groia'
+    name: 'Roberto Zeppa'
   });
 });
 
